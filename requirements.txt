@@ -1,0 +1,5 @@
+Django
+djangorestframework
+django-rest-auth[with_social]
+django-extensions
+djangorestframework-jwt
