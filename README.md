@@ -11,7 +11,7 @@ List of APIs:
 2. Login
 3. Logout
 4. Force Logout
-5. Test API: authenticated/authorized API to test auth system
+5. Test API: authenticated/authorized API to test auth system.(only allowed to admin)
 
 Core problem:
 Implementing signup/login are very easy to implement using rest_auth and djangorestframework-jwt.
@@ -31,4 +31,7 @@ To run:
 1. clone the project. import in pycharm, create virtual env, run: pip install -r requirements.txt
 2. db is already present, delete db.sqlite3 file if you want to test from scratch.
 3. run python manage.py migrate to create db schema.
-4. use postman collection to test APIs.
+4. run server using python manage.py runserver.
+5. use postman collection to test APIs.(contains data schema for APIs as well.)
+6. to test force logout API, a superuser needs to be created. create using command: python manage.py createsuperuser.
+
