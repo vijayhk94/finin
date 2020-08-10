@@ -33,5 +33,15 @@ To run:
 3. run python manage.py migrate to create db schema.
 4. run server using python manage.py runserver.
 5. use postman collection to test APIs.(contains data schema for APIs as well.)
-6. to test force logout API, a superuser needs to be created. create using command: python manage.py createsuperuser.
+6. to test force logout API, a superuser needs to be created. create using command: python manager
+
+
+
+Transactions fetch from gmail task:
+1. This is executed using script: email_script.py. use this command: python email_script.py
+2. script will prompt for uname and pwd, start_date, end_date for emails to be parsed.
+3. password to be given here will be app password, not mail pwd. to generate it follow this:https://support.google.com/accounts/answer/185833?hl=en
+4. script will end up creating a transactions.csv file in finin/ directory. this csv will have all transactions in that period,
+it will capture transaction type, amount, date for each transaction.
+
 
